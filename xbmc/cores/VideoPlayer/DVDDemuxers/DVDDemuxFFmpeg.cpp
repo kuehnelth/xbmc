@@ -37,6 +37,7 @@
 #include "system.h"
 #include "threads/SystemClock.h"
 #include "URL.h"
+#include "Util.h"
 #include "utils/log.h"
 #include "utils/StringUtils.h"
 #include "utils/URIUtils.h"
@@ -1470,7 +1471,7 @@ CDemuxStream* CDVDDemuxFFmpeg::AddStream(int streamIdx)
           }
           else
           {
-            fileName += nameTag->value;
+            fileName += CUtil::MakeLegalFileName(nameTag->value, LEGAL_WIN32_COMPAT);
             XFILE::CFile file;
             if(pStream->codec->extradata && file.OpenForWrite(fileName))
             {
