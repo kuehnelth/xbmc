@@ -896,6 +896,20 @@
 							<property name="id">weather</property>
 							<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
 						</item>
+						<item>
+							<label>Chrome</label>
+							<onclick>XBMC.System.Exec(/usr/bin/google-chrome-stable)</onclick>
+							<thumb>DefaultAddonWebSkin.png</thumb>
+							<property name="id">chrome</property>
+							<visible>!Skin.HasSetting(HomeMenuNoChromeButton)</visible>
+						</item>
+						<item>
+							<label>Spotify</label>
+							<onclick>XBMC.System.Exec(/usr/bin/spotify)</onclick>
+							<thumb>DefaultAddonMusic.png</thumb>
+							<property name="id">spotify</property>
+							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
+						</item>
 					</content>
 				</control>
 				<control type="grouplist" id="700">

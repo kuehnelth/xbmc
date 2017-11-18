@@ -213,6 +213,18 @@
 					<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
 				</control>
+				<control type="radiobutton" id="61800">
+					<label>Chrome</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoChromeButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoChromeButton)</onclick>
+				</control>
+				<control type="radiobutton" id="61900">
+					<label>Spotify</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeMenuNoSpotifyButton)</selected>
+					<onclick>Skin.ToggleSetting(HomeMenuNoSpotifyButton)</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
