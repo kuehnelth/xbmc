@@ -910,6 +910,13 @@
 							<property name="id">spotify</property>
 							<visible>!Skin.HasSetting(HomeMenuNoSpotifyButton)</visible>
 						</item>
+						<item>
+							<label>Emulators</label>
+							<onclick>XBMC.System.Exec(/usr/bin/emulator-frontend.sh)</onclick>
+							<thumb>DefaultAddonGame.png</thumb>
+							<property name="id">emulationstation</property>
+							<visible>!Skin.HasSetting(HomeMenuNoEmulatorsButton)</visible>
+						</item>
 					</content>
 				</control>
 				<control type="grouplist" id="700">
